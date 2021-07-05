@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s1pmQFr+aQShHf0G0GO9/2wl2BPQlQIlq39sb1UEtiirlXUZcIENbUviDhj55hVACzi3t3Ae1WpIzR/M7Eh3yw==",
+  "success": true,
+  "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fabio\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

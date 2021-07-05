@@ -1,0 +1,12 @@
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\bin\Debug\net5.0\Resiliencia.deps.json
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\bin\Debug\net5.0\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\bin\Debug\net5.0\ref\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\bin\Debug\net5.0\Resiliencia.pdb
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.csprojAssemblyReference.cache
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.AssemblyInfoInputs.cache
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.AssemblyInfo.cs
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.csproj.CoreCompileInputs.cache
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\ref\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiColetas\Resiliencia\obj\Debug\net5.0\Resiliencia.pdb

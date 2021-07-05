@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gzmRJ1ttosxCcsR/glTotJ9evSO981xY65NbCbAvRzNeXcb3WVzKLDLcjQa21bUMdXBnFe6Qvpj78KPqhZvwWA==",
+  "success": true,
+  "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiBancoLeitura\\Crosscuting\\Crosscuting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fabio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

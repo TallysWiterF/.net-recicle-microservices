@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "Uj6RwrXdbZpP2jbIn3mRbrrxYEQvXiLoY7OfMcztjEV61sA5gkCLuZ3knUkNTxItMBiN/JpmspZlx1ssLTNsaQ==",
+  "success": true,
+  "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiColetas\\Resiliencia\\Resiliencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.http.polly\\5.0.1\\microsoft.extensions.http.polly.5.0.1.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

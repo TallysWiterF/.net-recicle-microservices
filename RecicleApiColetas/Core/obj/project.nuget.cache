@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t7rKz05RGm3AYWGLLeyXZFrwAiC1yt5tXAcXEBVfdzH2VpovTVauTkUBks0BRtnVsx/osjY+sn/cMBKsEfoIIQ==",
+  "success": true,
+  "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiColetas\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fabio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
