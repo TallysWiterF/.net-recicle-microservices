@@ -12,7 +12,8 @@
           "Core": "1.0.0",
           "Dominio": "1.0.0",
           "Microsoft.Extensions.Http": "5.0.0",
-          "Refit": "6.0.38"
+          "Refit": "6.0.38",
+          "Resiliencia": "1.0.0"
         },
         "runtime": {
           "ViaCep.dll": {}
@@ -141,6 +142,14 @@
           }
         }
       },
+      "Polly/7.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.2.0"
+          }
+        }
+      },
       "Refit/6.0.38": {
         "dependencies": {
           "System.Net.Http.Json": "5.0.0"
@@ -182,6 +191,14 @@
         },
         "runtime": {
           "Dominio.dll": {}
+        }
+      },
+      "Resiliencia/1.0.0": {
+        "dependencies": {
+          "Polly": "7.2.2"
+        },
+        "runtime": {
+          "Resiliencia.dll": {}
         }
       }
     }
@@ -283,6 +300,13 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
+    "Polly/7.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
+      "path": "polly/7.2.2",
+      "hashPath": "polly.7.2.2.nupkg.sha512"
+    },
     "Refit/6.0.38": {
       "type": "package",
       "serviceable": true,
@@ -322,6 +346,11 @@
       "sha512": ""
     },
     "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resiliencia/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -9,7 +9,6 @@ namespace Dominio.Entidades
         public string Nome { get; private set; }
         public string NumeroResidencia { get; private set; }
         public string Telefone { get; private set; }
-        public string Email { get; private set; }
         public string Latitude { get; private set; }
         public string Longitude { get; private set; }
         public Guid IdEndereco { get; private set; }
@@ -23,9 +22,9 @@ namespace Dominio.Entidades
         public Distribuidor DefinirEndereco(Endereco endereco)
         {
             Endereco = endereco;
-            Validar();
             if(Endereco is not null)
                 IdEndereco = endereco.Id;
+            Validar();
             return this;
         }
 
@@ -46,13 +45,6 @@ namespace Dominio.Entidades
         public Distribuidor DefinirTelefone(string telefone)
         {
             Telefone = telefone;
-            Validar();
-            return this;
-        }
-
-        public Distribuidor DefinirEmail(string email)
-        {
-            Email = email;
             Validar();
             return this;
         }

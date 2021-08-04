@@ -1952,7 +1952,8 @@
           "Core": "1.0.0",
           "Crosscuting": "1.0.0",
           "Dominio": "1.0.0",
-          "Microsoft.Extensions.Http": "5.0.0"
+          "Microsoft.Extensions.Http": "5.0.0",
+          "Resiliencia": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RecicleApiBancoLeitura.dll": {}

@@ -28,7 +28,7 @@ namespace MensageriaRabbitMq.Handlers.Consimudores
 
         public async Task Handle(ResponseHandler<RemoverItemMessage> response)
         {
-            var command = _mapper.Map<RemoverItensCommand>(response);
+            var command = _mapper.Map<RemoverItensCommand>(response?.Dados);
             await _injector.MediatorCustom.EnviarComandoAsync(command);
         }
 

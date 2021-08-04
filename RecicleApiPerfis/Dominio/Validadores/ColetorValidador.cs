@@ -15,9 +15,6 @@ namespace Dominio.Validadores
                 .Must((e, x) => x.FullNumber()).WithMessage(MensagensValidador.DontNumber("Telefone"))
                 .MinimumLength(10).WithMessage(MensagensValidador.MinLengthInvalid("Telefone"))
                 .MaximumLength(11).WithMessage(MensagensValidador.MaxLengthInvalid("Telefone"));
-            RuleFor(x => x.Email).NotNull().WithMessage(MensagensValidador.NotNullGeneric("E-mail"))
-                .EmailAddress().WithMessage(MensagensValidador.EmailInvalid("E-mail"))
-                .MaximumLength(50).WithMessage(MensagensValidador.MaxLengthInvalid("E-mail"));
         }
     }
 }

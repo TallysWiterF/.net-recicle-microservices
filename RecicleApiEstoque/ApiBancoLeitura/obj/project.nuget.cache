@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ci82U4WrWTwm7ylmVfsgxpCacDPBabYkSLNY2aRcQtsUF04WAgv3dOhOzvdiNLuc21WlZlB7CjKYTnfaKGBQbw==",
+  "dgSpecHash": "LKIJjPsl2SsKJBTlpij+FuW0Kx7SeYw4trB8jy52X3AIyefTH6oKc8NL+l9KBhOHSZQThXodGN5WZcF8g8qIAA==",
   "success": true,
   "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\ApiBancoLeitura\\RecicleApiBancoLeitura.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\mongodb.bson\\2.12.4\\mongodb.bson.2.12.4.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []

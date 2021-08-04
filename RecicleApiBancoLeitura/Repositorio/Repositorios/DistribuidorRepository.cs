@@ -21,8 +21,7 @@ namespace Repositorio.Repositorios
             var idUserHasValue = filter.IdUser.HasValue;
             var idHasValue = filter.Id.HasValue;
             var filterBuilder = Builders<Distribuidor>.Filter.Where(x =>
-                1 == 1 &&
-                (!filter.Email.HasValue() || x.Email == filter.Email)
+                1 == 1
                 && (!filter.Nome.HasValue() || x.Nome.ToLower().Contains(filter.Nome.ToLower()))
                 && (!idUserHasValue || x.IdUser == filter.IdUser)
                 && (!idHasValue || x.Id == filter.Id)

@@ -79,21 +79,12 @@ namespace Servico.Handlers
         #region Metodos Privados
         private async Task<bool> ValidarAsync(Distribuidor distribuidor, string cep)
         {
-            var distribuidorCollection = (await _distribuidorRepository
-                .BuscarAsync(x => 
-                    x.Id != distribuidor.Id &&
-                    x.Email.Equals(distribuidor.Email)))
-                .ToList();
-
-            if (distribuidorCollection != null && distribuidorCollection.Any())
-            {
-                if ((distribuidorCollection.Where(x => x.Email.Equals(distribuidor.Email))).Any())
-                {
-                    _notificador.Add("Email inserido já está sendo usado.", EnumTipoMensagem.Warning);
-                    return false;
-                }
-            }
-            return true;
+            var existe = await _distribuidorRepository.ExisteAsync(x => 
+                                x.Id != distribuidor.Id &&
+                                x.IdUser==distribuidor.IdUser);
+            if(existe) 
+                _notificador.Add("Este usuário já contém um perfil cadastrado.");
+            return !existe;
         }
 
         private async Task DefinirEnderecoAsync(Distribuidor distribuidor, string cep)

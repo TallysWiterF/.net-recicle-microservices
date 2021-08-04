@@ -9,6 +9,5 @@ namespace Dominio.Contratos.Querys
         public Guid? Id { get; init; }
         public Guid? IdUser { get; init; }
         public string Nome { get; init; }
-        public string Email { get; init; }
     }
 }

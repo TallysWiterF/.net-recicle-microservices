@@ -74,9 +74,7 @@ namespace Servico.Handlers
         #region Metodos Privados
         private async Task<bool> ValidarAsync(Coletor coletor)
         {
-            var existe = await _coletorRepository.ExisteAsync(x => x.Id != coletor.Id && x.Email.Equals(coletor.Email));
-            if (existe)
-                _notificador.Add("Email inserido já está sendo usado.", EnumTipoMensagem.Warning);
+            var existe = await _coletorRepository.ExisteAsync(x => x.Id != coletor.Id && x.IdUser == coletor.IdUser);
             return !existe;
         }
         #endregion

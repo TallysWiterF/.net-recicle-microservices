@@ -4,6 +4,7 @@ using MensageriaRabbitMq.Setup.Objetos;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,15 +20,16 @@ namespace MensageriaRabbitMq.Setup
 
         public IModel CreateChannel() => _connection.CreateModel();
 
-        public Task<InfoQueue> CreateQueue(string fila)
+        public Task<InfoQueue> CreateQueue(string fila, Dictionary<string, object> args = null, IModel canal = null)
         {
-            var canalEscolhido = CreateChannel();
+            var canalEscolhido = canal ?? CreateChannel();
             var queueCriada = new InfoQueue(canalEscolhido.QueueDeclare(queue: fila,
                                   durable: true,
                                   exclusive: false,
                                   autoDelete: false,
-                                  arguments: null));
-            canalEscolhido.Dispose();
+                                  arguments: args));
+            if (canal is null)
+                canalEscolhido.Dispose();
             return Task.FromResult(queueCriada);
         }
 
@@ -38,9 +40,11 @@ namespace MensageriaRabbitMq.Setup
             return Task.CompletedTask;
         }
 
-        public Task Consumer<TResponse>(IConsumer<TResponse> consumidor, string fila, IModel channel = null)
+        public Task Consumer<TResponse>(IConsumer<TResponse> consumidor, string fila, IModel channel = null) where TResponse : IMessageResponse
         {
             var canalEscolhido = channel ?? CreateChannel();
+            canalEscolhido.BasicQos(0, 5, false);
+            CriarSetupDeadLetter(canalEscolhido);
             var consumer = new EventingBasicConsumer(canalEscolhido);
             consumer.Received += (sender, events) => HandlerRecebimento(consumidor, canalEscolhido, sender, events);
             canalEscolhido.BasicConsume(fila, false, consumer);
@@ -55,18 +59,29 @@ namespace MensageriaRabbitMq.Setup
         }
 
         private void HandlerRecebimento<TResponse>(IConsumer<TResponse> consumidor, IModel canal,
-                                        object value, BasicDeliverEventArgs events)
+                                        object value, BasicDeliverEventArgs events) where TResponse : IMessageResponse
         {
             try
             {
-                consumidor.Handle(new ResponseHandler<TResponse>(events)).Wait();
+                consumidor.Handle(new ResponseHandler<TResponse>(events));
                 canal.BasicAck(events.DeliveryTag, false);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                canal.BasicNack(events.DeliveryTag, true, true);
+                canal.BasicNack(events.DeliveryTag, true, false);
             }
+        }
+
+        private void CriarSetupDeadLetter(IModel canal)
+        {
+            var argumentos = new Dictionary<string, object>
+            {
+                {"x-dead-letter-exchange", Filas.DEAD_LETTER_LEITURA.ToString() }
+            };
+            canal.ExchangeDeclare(Filas.DEAD_LETTER_LEITURA.ToString(), ExchangeType.Fanout);
+            CreateQueue(Filas.DEAD_LETTER_LEITURA.ToString(), argumentos, canal).Wait();
+            canal.QueueBind(Filas.DEAD_LETTER_LEITURA.ToString(), Filas.DEAD_LETTER_LEITURA.ToString(), string.Empty);
         }
         #endregion
     }

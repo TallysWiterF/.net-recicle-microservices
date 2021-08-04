@@ -347,80 +347,6 @@
         }
       }
     },
-    "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj",
-        "projectName": "RecicleApiAcesso",
-        "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj",
-        "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
-        "outputPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Core\\Core.csproj": {
-                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Core\\Core.csproj"
-              },
-              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Crosscuting\\Crosscuting.csproj": {
-                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Crosscuting\\Crosscuting.csproj"
-              },
-              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj": {
-                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.AspNet.WebApi.Client": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
-            "Microsoft.Extensions.Http": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiBancoLeitura\\RecicleApiBancoLeitura.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -453,6 +379,9 @@
               },
               "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj": {
                 "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj"
+              },
+              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj": {
+                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj"
               }
             }
           }
@@ -737,6 +666,9 @@
               },
               "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj": {
                 "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj"
+              },
+              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj": {
+                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj"
               }
             }
           }
@@ -821,9 +753,6 @@
               },
               "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\MensageriaRabbitMq\\MensageriaRabbitMq.csproj": {
                 "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\MensageriaRabbitMq\\MensageriaRabbitMq.csproj"
-              },
-              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj": {
-                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj"
               },
               "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiBancoLeitura\\RecicleApiBancoLeitura.csproj": {
                 "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiBancoLeitura\\RecicleApiBancoLeitura.csproj"

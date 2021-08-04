@@ -1,7 +1,9 @@
 ﻿using Core.Base;
+using Crosscuting.Notificacao;
 using Dominio.Contratos.Commands.ItemCommands;
 using Dominio.Entidades;
 using RecicleApiBancoLeitura.Setup;
+using Resiliencia.Setup;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,6 +23,7 @@ namespace RecicleApiBancoLeitura.Handlers
         {
             if (cancellationToken.IsCancellationRequested) return null;
             return await _injector.Client.GetAsync<IEnumerable<Item>, BuscarItemCommand>("item", request);
+;
         }
     }
 }

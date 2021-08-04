@@ -123,6 +123,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Polly/7.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
@@ -174,6 +183,19 @@
         },
         "runtime": {
           "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Resiliencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Polly": "7.2.2"
+        },
+        "compile": {
+          "bin/placeholder/Resiliencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resiliencia.dll": {}
         }
       }
     }
@@ -413,6 +435,29 @@
         "packageIcon.png"
       ]
     },
+    "Polly/7.2.2": {
+      "sha512": "E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
+      "type": "package",
+      "path": "polly/7.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.2.2.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/5.0.0": {
       "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
@@ -459,6 +504,11 @@
       "type": "project",
       "path": "../Dominio/Dominio.csproj",
       "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Resiliencia/1.0.0": {
+      "type": "project",
+      "path": "../Resiliencia/Resiliencia.csproj",
+      "msbuildProject": "../Resiliencia/Resiliencia.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -466,7 +516,8 @@
       "Core >= 1.0.0",
       "Crosscuting >= 1.0.0",
       "Dominio >= 1.0.0",
-      "Microsoft.Extensions.Http >= 5.0.0"
+      "Microsoft.Extensions.Http >= 5.0.0",
+      "Resiliencia >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -504,6 +555,9 @@
             },
             "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj": {
               "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Dominio\\Dominio.csproj"
+            },
+            "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj": {
+              "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\Resiliencia\\Resiliencia.csproj"
             }
           }
         }

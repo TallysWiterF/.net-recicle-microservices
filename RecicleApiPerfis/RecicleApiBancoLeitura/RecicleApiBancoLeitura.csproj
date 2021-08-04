@@ -12,6 +12,7 @@
     <ProjectReference Include="..\Core\Core.csproj" />
     <ProjectReference Include="..\Crosscuting\Crosscuting.csproj" />
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
+    <ProjectReference Include="..\Resiliencia\Resiliencia.csproj" />
   </ItemGroup>
 
 </Project>

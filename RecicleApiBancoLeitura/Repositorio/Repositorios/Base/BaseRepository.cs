@@ -44,7 +44,9 @@ namespace Repositorio.Repositorios.Base
 
         public async Task RemoverAsync(Guid idEntidade)
         {
-            await AddAsync(BuscarPorIdAsync(idEntidade).Result, EnumTipoEvento.Remocao);
+            var entidade = await BuscarPorIdAsync(idEntidade);
+            if (entidade is null) return;
+            await AddAsync(entidade, EnumTipoEvento.Remocao);
             await Collection.DeleteOneAsync(x => x.Id.Equals(idEntidade));
         }
 

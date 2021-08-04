@@ -1,6 +1,5 @@
 ﻿using Core.Base;
 using Dominio.Contratos.Commands;
-using Dominio.Contratos.Querys;
 using Dominio.Entidades;
 using RecicleApiBancoLeitura.Setup;
 using System.Collections.Generic;

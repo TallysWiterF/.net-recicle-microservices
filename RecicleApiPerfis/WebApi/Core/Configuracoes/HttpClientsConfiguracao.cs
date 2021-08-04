@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using Polly;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -18,27 +17,15 @@ namespace WebApi.Core.Configuracoes
             {
                 http.BaseAddress = new Uri(configuration.GetSection("ApiBancoLeitura").Value);
                 http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", GetToken(provider));
-               
+
             })
-            .ConfigurePrimaryHttpMessageHandler(() => CriarLiberacaoSSL())
-            .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
-            .AddTransientHttpErrorPolicy(p => p.CircuitBreakerAsync(3, TimeSpan.FromSeconds(30)));
+            .ConfigurePrimaryHttpMessageHandler(() => CriarLiberacaoSSL());
 
             services.AddHttpClient("ApiViaCep", http =>
             {
                 http.BaseAddress = new Uri(configuration.GetSection("ApiViaCep").Value);
-            })
-            .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
-            .AddTransientHttpErrorPolicy(p => p.CircuitBreakerAsync(3, TimeSpan.FromSeconds(30)));
-
-            services.AddHttpClient("ApiRecicleAcesso", (provider, http) =>
-            {
-                http.BaseAddress = new Uri(configuration.GetSection("ApiRecicleAcesso").Value);
-                http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", GetToken(provider));
-            })
-            .ConfigurePrimaryHttpMessageHandler(() => CriarLiberacaoSSL())
-            .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
-            .AddTransientHttpErrorPolicy(p => p.CircuitBreakerAsync(3, TimeSpan.FromSeconds(30)));
+            });
+            
             return services;
         }
 
@@ -51,7 +38,8 @@ namespace WebApi.Core.Configuracoes
         private static HttpClientHandler CriarLiberacaoSSL()
         {
             HttpClientHandler clientHandler = new HttpClientHandler();
-            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) 
+                => { return true; };
             return clientHandler;
         }
     }

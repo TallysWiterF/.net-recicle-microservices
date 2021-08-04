@@ -1,15 +1,18 @@
 ﻿using Polly;
 using Polly.Timeout;
-using Polly.Wrap;
+using Resiliencia.Objetos;
+using System.Threading.Tasks;
 
 namespace Resiliencia.Setup
 {
     public static class PollyFactoryTimeOutExtensions
     {
-        public static AsyncPolicyWrap<TReturn> CreateTimeoutAsync<TReturn>(this PollyFactory pollyFactory, TReturn defaultValue, int tempo = 30)
+        public static async Task<TReturn> CreateTimeoutAsync<TReturn>(this IPollyFactory pollyFactory, PollyParametrizacaoTimeout<TReturn> setup)
         {
-            var policy = Policy.TimeoutAsync<TReturn>(tempo, TimeoutStrategy.Optimistic);
-            return Policy.WrapAsync(pollyFactory.CreateFallback(defaultValue), policy);
+            var policy = Policy.TimeoutAsync<TReturn>(setup.Segundos, TimeoutStrategy.Optimistic);
+            return await Policy
+                    .WrapAsync(pollyFactory.CreateFallback(setup.ValorDefault), policy)
+                    .ExecuteAsync(async () => await setup.TaskHandler());
         }
     }
 }

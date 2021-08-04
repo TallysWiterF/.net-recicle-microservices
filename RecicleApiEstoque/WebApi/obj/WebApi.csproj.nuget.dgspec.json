@@ -36,6 +36,9 @@
               },
               "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\Dominio\\Dominio.csproj": {
                 "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\Dominio\\Dominio.csproj"
+              },
+              "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\Resiliencia\\Resiliencia.csproj": {
+                "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\Resiliencia\\Resiliencia.csproj"
               }
             }
           }

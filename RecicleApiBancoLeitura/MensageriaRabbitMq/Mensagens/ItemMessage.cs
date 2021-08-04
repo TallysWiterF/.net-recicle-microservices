@@ -7,22 +7,22 @@ namespace MensageriaRabbitMq.Mensagens
 {
     public class ItemMessage : IMessageResponse
     {
-        public Item Item { get; set; }
+        public Item Entidade { get; set; }
         public EnumTipoSincronizacaoMessage Tipo { get; set; }
 
         public BaseCommand<Item> CriarCommandEspecifico()
         {
             return Tipo switch
             {
-                EnumTipoSincronizacaoMessage.ADICIONAR => new AddItemCommand { Item = Item },
-                EnumTipoSincronizacaoMessage.ATUALIZAR => new AtualizarItemCommand { Item = Item },
+                EnumTipoSincronizacaoMessage.ADICIONAR => new AddItemCommand { Item = Entidade },
+                EnumTipoSincronizacaoMessage.ATUALIZAR => new AtualizarItemCommand { Item = Entidade },
                 _ => null
             };
         }
 
         public BaseCommand<bool> CriarCommandRemover()
         {
-            return new RemoverItemCommand { Id = Item.Id };
+            return new RemoverItemCommand { Id = Entidade.Id };
         }
     }
 }

@@ -94,19 +94,6 @@
           "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Client/5.2.7": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.1",
-          "Newtonsoft.Json.Bson": "1.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.7": {
         "type": "package",
         "dependencies": {
@@ -1974,23 +1961,6 @@
           "bin/placeholder/MensageriaRabbitMq.dll": {}
         }
       },
-      "RecicleApiAcesso/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Core": "1.0.0",
-          "Crosscuting": "1.0.0",
-          "Dominio": "1.0.0",
-          "Microsoft.AspNet.WebApi.Client": "5.2.7",
-          "Microsoft.Extensions.Http": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/RecicleApiAcesso.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RecicleApiAcesso.dll": {}
-        }
-      },
       "RecicleApiBancoLeitura/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1998,7 +1968,8 @@
           "Core": "1.0.0",
           "Crosscuting": "1.0.0",
           "Dominio": "1.0.0",
-          "Microsoft.Extensions.Http": "5.0.0"
+          "Microsoft.Extensions.Http": "5.0.0",
+          "Resiliencia": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RecicleApiBancoLeitura.dll": {}
@@ -2061,7 +2032,8 @@
           "Core": "1.0.0",
           "Dominio": "1.0.0",
           "Microsoft.Extensions.Http": "5.0.0",
-          "Refit": "6.0.38"
+          "Refit": "6.0.38",
+          "Resiliencia": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ViaCep.dll": {}
@@ -2204,23 +2176,6 @@
         "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
         "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
         "mediatr.extensions.microsoft.dependencyinjection.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.Client/5.2.7": {
-      "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.client/5.2.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/System.Net.Http.Formatting.dll",
-        "lib/net45/System.Net.Http.Formatting.xml",
-        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
-        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
-        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
-        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
-        "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
-        "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.7": {
@@ -6853,11 +6808,6 @@
       "path": "../MensageriaRabbitMq/MensageriaRabbitMq.csproj",
       "msbuildProject": "../MensageriaRabbitMq/MensageriaRabbitMq.csproj"
     },
-    "RecicleApiAcesso/1.0.0": {
-      "type": "project",
-      "path": "../RecicleApiAcesso/RecicleApiAcesso.csproj",
-      "msbuildProject": "../RecicleApiAcesso/RecicleApiAcesso.csproj"
-    },
     "RecicleApiBancoLeitura/1.0.0": {
       "type": "project",
       "path": "../RecicleApiBancoLeitura/RecicleApiBancoLeitura.csproj",
@@ -6902,7 +6852,6 @@
       "Microsoft.Extensions.Http.Polly >= 5.0.1",
       "Microsoft.IdentityModel.Tokens >= 6.11.1",
       "NetDevPack.Identity >= 5.0.1",
-      "RecicleApiAcesso >= 1.0.0",
       "RecicleApiBancoLeitura >= 1.0.0",
       "Refit.HttpClientFactory >= 6.0.38",
       "Repositorio >= 1.0.0",
@@ -6954,9 +6903,6 @@
             },
             "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\MensageriaRabbitMq\\MensageriaRabbitMq.csproj": {
               "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\MensageriaRabbitMq\\MensageriaRabbitMq.csproj"
-            },
-            "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj": {
-              "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiAcesso\\RecicleApiAcesso.csproj"
             },
             "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiBancoLeitura\\RecicleApiBancoLeitura.csproj": {
               "projectPath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiPerfis\\RecicleApiBancoLeitura\\RecicleApiBancoLeitura.csproj"

@@ -206,6 +206,3 @@ E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApi
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Newtonsoft.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\Aplicacao.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\Aplicacao.pdb
-E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\System.Net.Http.Formatting.dll
-E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\RecicleApiAcesso.dll
-E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\WebApi\bin\Debug\net5.0\RecicleApiAcesso.pdb

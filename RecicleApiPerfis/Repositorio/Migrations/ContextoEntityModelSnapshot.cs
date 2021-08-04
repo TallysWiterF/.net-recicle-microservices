@@ -31,12 +31,6 @@ namespace Repositorio.Migrations
                         .HasColumnType("datetime")
                         .HasColumnName("DATACRIACAO");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("EMAIL");
-
                     b.Property<Guid>("IdUser")
                         .HasMaxLength(100)
                         .HasColumnType("uniqueidentifier")
@@ -75,12 +69,6 @@ namespace Repositorio.Migrations
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime")
                         .HasColumnName("DATACRIACAO");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("EMAIL");
 
                     b.Property<Guid?>("EnderecoId")
                         .HasColumnType("uniqueidentifier");

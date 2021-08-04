@@ -8,7 +8,6 @@ namespace Dominio.Entidades
         public Guid IdUser { get; private set; }
         public string Nome { get; private set; }
         public string Telefone { get; private set; }
-        public string Email { get; private set; }
 
         public Coletor() : base()
         {
@@ -18,13 +17,6 @@ namespace Dominio.Entidades
         public Coletor DefinirTelefone(string telefone)
         {
             Telefone = telefone;
-            Validar();
-            return this;
-        }
-
-        public Coletor DefinirEmail(string email)
-        {
-            Email = email;
             Validar();
             return this;
         }

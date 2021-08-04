@@ -1,7 +1,10 @@
 ﻿using Core.Base;
+using Crosscuting.Notificacao;
 using Dominio.Contratos.Commands;
 using Dominio.Objetos;
 using RecicleApiBancoLeitura.Setup;
+using Resiliencia.Objetos;
+using Resiliencia.Setup;
 using System.Threading;
 using System.Threading.Tasks;
 

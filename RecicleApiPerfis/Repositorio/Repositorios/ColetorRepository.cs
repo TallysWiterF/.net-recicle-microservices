@@ -20,8 +20,7 @@ namespace Repositorio.Repositorios
             return Task.FromResult
                 (
                     (Injector.Context.Coletor
-                    .Where(x => (!filter.Email.HasValue() || x.Email == filter.Email)
-                                && (!filter.Nome.HasValue() || x.Nome.ToLower().Contains(filter.Nome.ToLower()))
+                    .Where(x => (!filter.Nome.HasValue() || x.Nome.ToLower().Contains(filter.Nome.ToLower()))
                                 && (!filter.Id.HasValue || x.Id == filter.Id.Value)
                                 && (!filter.IdUser.HasValue || x.IdUser == filter.IdUser.Value)
                      ))

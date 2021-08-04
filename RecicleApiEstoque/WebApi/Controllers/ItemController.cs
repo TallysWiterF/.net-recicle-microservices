@@ -13,7 +13,7 @@ using WebApi.Core.DTO;
 
 namespace WebApi.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route(RouteApi.BaseUrlApi + "/item")]
     public class ItemController : BaseController
     {

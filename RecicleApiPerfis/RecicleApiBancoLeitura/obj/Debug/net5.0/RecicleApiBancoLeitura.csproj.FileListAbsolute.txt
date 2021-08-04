@@ -17,3 +17,5 @@ E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApi
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\RecicleApiBancoLeitura\obj\Debug\net5.0\RecicleApiBancoLeitura.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\RecicleApiBancoLeitura\obj\Debug\net5.0\ref\RecicleApiBancoLeitura.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\RecicleApiBancoLeitura\obj\Debug\net5.0\RecicleApiBancoLeitura.pdb
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\RecicleApiBancoLeitura\bin\Debug\net5.0\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\RecicleApiBancoLeitura\bin\Debug\net5.0\Resiliencia.pdb

@@ -2,6 +2,6 @@
 {
     public class PollyParametrizacaoRetry<TReturn> : PollyParametrizacao<TReturn>
     {
-        public int Tentativas { get; init; }
+        public int Tentativas { get; set; }
     }
 }

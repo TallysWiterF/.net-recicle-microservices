@@ -10,6 +10,7 @@ using Repositorio.Contexto;
 using Repositorio.Repositorios;
 using Repositorio.Repositorios.Base;
 using Repositorio.Sincronizacao;
+using Resiliencia.Setup;
 using Servico.Handlers;
 using System;
 
@@ -21,6 +22,7 @@ namespace WebApi.Core.Configuracoes
         {
             #region Crosscuting
             services.AddScoped<INotificador, Notificador>();
+            services.AddScoped<IPollyFactory, PollyFactory>();
             #endregion
 
             #region Repositorio

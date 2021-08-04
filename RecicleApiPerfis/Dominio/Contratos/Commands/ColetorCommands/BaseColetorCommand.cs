@@ -8,6 +8,5 @@ namespace Dominio.Contratos.Commands.ColetorCommands
         public Guid IdUser { get; set; }
         public string Nome { get; init; }
         public string Telefone { get; init; }
-        public string Email { get; init; }
     }
 }

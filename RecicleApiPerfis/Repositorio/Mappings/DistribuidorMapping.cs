@@ -16,7 +16,6 @@ namespace Repositorio.Mappings
             builder.Property(x => x.Nome).HasColumnName("NOME").HasColumnType("varchar(100)").IsRequired().HasMaxLength(100);
             builder.Property(x => x.Telefone).HasColumnName("TELEFONE").HasColumnType("varchar(11)").IsUnicode(false).IsRequired().HasMaxLength(11);
             builder.Property(x => x.IdUser).HasColumnName("IDUSER").HasColumnType("uniqueidentifier").HasMaxLength(100).IsRequired();
-            builder.Property(x => x.Email).HasColumnName("EMAIL").HasColumnType("varchar(50)").HasMaxLength(50).IsRequired();
             builder.Property(x => x.NumeroResidencia).HasColumnName("NUMERORESIDENCIA").HasColumnType("varchar(10)").IsUnicode(false).IsRequired().HasMaxLength(10);
             builder.Property(x => x.Latitude).HasColumnName("LATITUDE").HasColumnType("varchar(100)").HasMaxLength(100);
             builder.Property(x => x.Longitude).HasColumnName("LONGITUDE").HasColumnType("varchar(100)").HasMaxLength(100);

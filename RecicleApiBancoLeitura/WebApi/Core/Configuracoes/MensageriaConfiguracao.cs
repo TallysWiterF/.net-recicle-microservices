@@ -19,10 +19,10 @@ namespace WebApi.Core.Configuracoes
         {
             services.AddSingleton<IRabbit, Rabbit>(x => new Rabbit(configuration.GetConnectionString("RabbitMq")));
             services.AddScoped<MensageriaInjector>();
-            services.AddScoped<IAgendamentoMessageHandler, AgendamentoMessageHandler>();
-            services.AddScoped<IColetorMessageHandler, ColetorMessageHandler>();
-            services.AddScoped<IDistribuidorMessageHandler, DistribuidorMessageHandler>();
-            services.AddScoped<IItemMessageHandler, ItemMessageHandler>();
+            services.AddScoped<IAgendamentoMessageHandler, AgendamentoConsumerMessageHandler>();
+            services.AddScoped<IColetorMessageHandler, ColetorConsumerMessageHandler>();
+            services.AddScoped<IDistribuidorMessageHandler, DistribuidorConsumerMessageHandler>();
+            services.AddScoped<IItemMessageHandler, ItemConsumerMessageHandler>();
             services.AddHostedService(x => new InicializadoresRegisterHost(services));
             return services;
         }

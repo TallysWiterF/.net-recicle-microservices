@@ -9,7 +9,6 @@ namespace Dominio.Contratos.Commands.DistribuidorCommands
         public string Cep { get; set; }
         public string Nome { get; set; }
         public string Telefone { get; set; }
-        public string Email { get; set; }
         public string NumeroResidencia { get; set; }
         public double? Latitude { get; set; }
         public double? Longitude { get; set; }

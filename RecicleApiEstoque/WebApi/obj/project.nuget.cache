@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "b4U/2P0KuKvXs94PiqnUkR3CeDGPEEicp0S/6upsgIH64gpDnbEUSLrvA351ltH3B40OyEA2kWsynb5+9ZAf+g==",
+  "dgSpecHash": "NhUQlXMerp0dOt/LBtN9bm0tGp4EFfGWv0dWFMzEf6kslbPF8cyZPDaqEdVy7tonVQC3CKiDGp98RG4DhGInDQ==",
   "success": true,
   "projectFilePath": "E:\\Desenvolvimento\\.NET Core\\Recicle\\Arquitetura Microsserviços\\APIs\\RecicleApiEstoque\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [

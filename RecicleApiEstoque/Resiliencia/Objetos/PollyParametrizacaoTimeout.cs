@@ -2,6 +2,6 @@
 {
     public class PollyParametrizacaoTimeout<TReturn> : PollyParametrizacaoRetry<TReturn>
     {
-        public int Milissegundos { get; init; }
+        public int Segundos { get; init; }
     }
 }

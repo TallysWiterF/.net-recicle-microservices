@@ -41,8 +41,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resiliencia", "Resiliencia\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplicacao", "Aplicacao\Aplicacao.csproj", "{26919EA3-AAFB-4B0E-B444-9684EDA788CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecicleApiAcesso", "RecicleApiAcesso\RecicleApiAcesso.csproj", "{0B5E3FC3-C703-4816-8A42-1874E3159A4A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,10 +91,6 @@ Global
 		{26919EA3-AAFB-4B0E-B444-9684EDA788CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26919EA3-AAFB-4B0E-B444-9684EDA788CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26919EA3-AAFB-4B0E-B444-9684EDA788CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B5E3FC3-C703-4816-8A42-1874E3159A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B5E3FC3-C703-4816-8A42-1874E3159A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B5E3FC3-C703-4816-8A42-1874E3159A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B5E3FC3-C703-4816-8A42-1874E3159A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,7 +111,6 @@ Global
 		{B8569835-4476-422D-9F51-56ABA1216C83} = {9069E8D5-1B2D-4C35-A0FE-6E81CD0F9268}
 		{DDB62244-4521-4698-844B-4075312D27D1} = {9E012337-CF21-4767-BF8D-5B612C3D49B4}
 		{26919EA3-AAFB-4B0E-B444-9684EDA788CF} = {4C4DB8C1-CD77-4558-AB42-30EF5E237F40}
-		{0B5E3FC3-C703-4816-8A42-1874E3159A4A} = {9069E8D5-1B2D-4C35-A0FE-6E81CD0F9268}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8446E484-9F0E-41BE-84B6-365ACB8302D9}

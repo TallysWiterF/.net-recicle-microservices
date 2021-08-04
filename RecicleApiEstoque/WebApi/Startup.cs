@@ -39,7 +39,7 @@ namespace WebApi
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Estoque V1"));
             app.UseMiddleware<ExceptionMiddlware>();
             app.UseCors("CorsOptions");
             app.UseHttpsRedirection();

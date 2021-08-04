@@ -31,7 +31,6 @@
     <ProjectReference Include="..\Crosscuting\Crosscuting.csproj" />
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
     <ProjectReference Include="..\MensageriaRabbitMq\MensageriaRabbitMq.csproj" />
-    <ProjectReference Include="..\RecicleApiAcesso\RecicleApiAcesso.csproj" />
     <ProjectReference Include="..\RecicleApiBancoLeitura\RecicleApiBancoLeitura.csproj" />
     <ProjectReference Include="..\Repositorio\Repositorio.csproj" />
     <ProjectReference Include="..\Resiliencia\Resiliencia.csproj" />

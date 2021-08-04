@@ -36,3 +36,5 @@ E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApi
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\ViaCep\obj\Debug\net5.0\ViaCep.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\ViaCep\obj\Debug\net5.0\ref\ViaCep.dll
 E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\ViaCep\obj\Debug\net5.0\ViaCep.pdb
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\ViaCep\bin\Debug\net5.0\Resiliencia.dll
+E:\Desenvolvimento\.NET Core\Recicle\Arquitetura Microsserviços\APIs\RecicleApiPerfis\ViaCep\bin\Debug\net5.0\Resiliencia.pdb

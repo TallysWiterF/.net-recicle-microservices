@@ -6,12 +6,12 @@ using MediatR;
 using MensageriaRabbitMq.Setup;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RecicleApiAcesso.Setup;
 using RecicleApiBancoLeitura.Setup;
 using Repositorio.Contexto;
 using Repositorio.Repositorios;
 using Repositorio.Repositorios.Base;
 using Repositorio.Sincronizacao;
+using Resiliencia.Setup;
 using Servico.Handlers;
 using Servico.Mappers;
 using ViaCep.Handlers;
@@ -25,6 +25,7 @@ namespace WebApi.Core.Configuracoes
         {
             #region Crosscuting
             services.AddScoped<INotificador, Notificador>();
+            services.AddScoped<IPollyFactory, PollyFactory>();
             #endregion
 
             #region Repositorio
@@ -49,12 +50,10 @@ namespace WebApi.Core.Configuracoes
             services.AddMediatR(typeof(Rabbit).Assembly);
             services.AddMediatR(typeof(ColetorPorUsuarioHandler).Assembly);
             services.AddMediatR(typeof(BuscarEnderecoHandler).Assembly);
-            services.AddMediatR(typeof(ApiRecicleAcesso).Assembly);
             #endregion
 
             #region Integracao
             services.AddScoped<IApiBancoLeituraClient, ApiBancoLeituraClient>();
-            services.AddScoped<IApiRecicleAcesso, ApiRecicleAcesso>();
             services.AddScoped<ApiBancoLeituraInjector>();
             #endregion
 
